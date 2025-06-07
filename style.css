@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background: white;
+  color: #2e4633;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.top-header {
+  background-color: #ffffff;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-logo {
+  height: 60px;
+}
+
+/* Hero image */
+.hero-img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Main content */
+.main-content {
+  background: #ffffff;
+  padding: 60px 20px;
+}
+
+.main-content h1 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #2e4633;
+}
+
+.main-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+/* Kontaktsektion */
+.contact-section {
+  background-color: #2e4633;
+  color: white;
+  padding: 60px 20px;
+}
+
+.contact-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-box h2 {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.contact-box a {
+  color: white;
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .contact-boxes {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact-box {
+    width: 45%;
+  }
+}
