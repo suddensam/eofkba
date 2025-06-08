@@ -15,28 +15,26 @@ body {
 /* === HEADER === */
 .top-header {
   background-color: #ffffff;
-  padding: 8px 0; /* lägre headerhöjd */
+  padding: 10px 0;
   border-bottom: 1px solid #ddd;
 }
 
-.top-header .container {
+.header-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* loggan till vänster */
+  justify-content: flex-start;
 }
 
 .header-logo {
-  height: auto;
-  max-height: 90px; /* större logga */
+  height: 110px;
   width: auto;
-  max-width: 500px; /* bredare logga */
 }
 
 /* === HERO-BILD === */
 .hero-img {
   width: 100%;
   height: auto;
-  max-height: 280px; /* kortare banner */
+  max-height: 400px;
   object-fit: cover;
   display: block;
 }
@@ -59,35 +57,62 @@ body {
   line-height: 1.7;
 }
 
-/* === KONTAKTSEKTION (FOOTER) === */
+/* === KONTAKTSEKTION / FOOTER === */
 .footer {
   background-color: #2e4633; /* Mörkgrön */
   color: white;
-  padding: 40px 20px 30px; /* Topp, horisontell, botten (mindre botten-padding nu) */
+  padding: 40px 20px 20px;
   text-align: center;
 }
 
 .footer h2 {
   font-size: 2rem;
-  margin-bottom: 30px; /* Minskar avståndet ner till korten */
-  margin-top: 0; /* Tar bort onödig toppmarginal */
+  margin-bottom: 30px;
 }
 
 .contact-cards {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  gap: 30px;
+  gap: 20px;
   max-width: 900px;
-  margin: 0 auto 30px; /* Lägger lite luft nedåt så © inte klistrar */
+  margin: 0 auto 30px;
   flex-wrap: wrap;
 }
 
+.contact-card {
+  background-color: #dce6de; /* Ljusgrön */
+  color: #2e4633;
+  padding: 20px;
+  border-radius: 8px;
+  width: 240px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.contact-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.contact-card p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.contact-card a {
+  color: #2e4633;
+  text-decoration: underline;
+}
 
 /* === COPYRIGHT === */
-.footer .copyright {
+.footer-bottom {
+  text-align: right;
+  padding-right: 20px;
   font-size: 0.9rem;
-  color: #a4c4a5; /* Ljusgrön text */
+  color: #dce6de;
+  margin-top: 10px;
 }
 
 /* === MOBILANPASSNING === */
@@ -99,5 +124,10 @@ body {
 
   .main-content h1 {
     font-size: 1.5em;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-right: 0;
   }
 }
