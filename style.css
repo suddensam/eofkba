@@ -15,16 +15,21 @@ body {
 /* === HEADER === */
 .top-header {
   background-color: #ffffff;
-  padding: 10px 0; /* Minskat från 20px till 10px */
+  padding: 8px 0; /* lägre headerhöjd */
   border-bottom: 1px solid #ddd;
-  text-align: center;
+}
+
+.top-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* loggan till vänster */
 }
 
 .header-logo {
   height: auto;
-  max-height: 60px;
+  max-height: 90px; /* större logga */
   width: auto;
-  max-width: 250px; /* mycket större logga */
+  max-width: 320px; /* bredare logga */
 }
 
 /* === HERO-BILD === */
