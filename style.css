@@ -29,7 +29,7 @@ body {
   height: auto;
   max-height: 90px; /* större logga */
   width: auto;
-  max-width: 320px; /* bredare logga */
+  max-width: 500px; /* bredare logga */
 }
 
 /* === HERO-BILD === */
