@@ -63,13 +63,14 @@ body {
 .footer {
   background-color: #2e4633; /* Mörkgrön */
   color: white;
-  padding: 60px 20px 30px;
+  padding: 40px 20px 30px; /* Topp, horisontell, botten (mindre botten-padding nu) */
   text-align: center;
 }
 
 .footer h2 {
   font-size: 2rem;
-  margin-bottom: 40px;
+  margin-bottom: 30px; /* Minskar avståndet ner till korten */
+  margin-top: 0; /* Tar bort onödig toppmarginal */
 }
 
 .contact-cards {
@@ -78,35 +79,10 @@ body {
   align-items: stretch;
   gap: 30px;
   max-width: 900px;
-  margin: 0 auto 40px;
+  margin: 0 auto 30px; /* Lägger lite luft nedåt så © inte klistrar */
   flex-wrap: wrap;
 }
 
-.contact-card {
-  background-color: #dce6de; /* Ljusgrön */
-  color: #2e4633;
-  padding: 20px;
-  border-radius: 8px;
-  width: 220px; /* smalare */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  text-align: center;
-}
-
-.contact-card h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-}
-
-.contact-card p {
-  margin: 5px 0;
-  font-size: 1rem;
-}
-
-.contact-card a {
-  color: #2e4633;
-  text-decoration: underline;
-}
 
 /* === COPYRIGHT === */
 .footer .copyright {
